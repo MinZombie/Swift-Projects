@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="x8I-oz-ipI">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item-->
+        <scene sceneID="Sv5-bN-Bff">
+            <objects>
+                <viewController id="7XZ-L4-Wfy" customClass="ContactViewController" customModule="Project_01___Dortmund" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="E2X-d6-ifV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RYM-AK-lF1">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ckB-VP-F7o">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="790"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dortmund" translatesAutoresizingMaskIntoConstraints="NO" id="v3X-tS-Or3">
+                                                <rect key="frame" x="0.0" y="8" width="414" height="157"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dortmund" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lS0-pq-JcE">
+                                                <rect key="frame" x="10" y="225" width="394" height="29"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fpU-oZ-fev">
+                                                <rect key="frame" x="20" y="274" width="380" height="317.5"/>
+                                                <mutableString key="text">Wer das Ruhrgebiet mit all seinen Facetten erkunden möchte, kommt an Dortmund definitiv nicht vorbei. Die Heimatstadt des BVB überrascht nicht nur mit einer gehörigen Portion Fußballliebe, sondern auch mit einer Bandbreite an Möglichkeiten. Hier könnt Ihr auf den Spuren einer ehemaligen Zeche wandeln, in einer Ausstellung alle Facetten der Arbeitswelt erkunden und Euch die Geheimnisse des Bierbrauens näher bringen lassen. Egal ob Shopping-Victim, Naturliebhaber oder Fußballfan: In Dortmund kommt ganz sicher jeder auf seine Kosten.</mutableString>
+                                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="40K-nO-wqj">
+                                                <rect key="frame" x="10" y="651.5" width="389" height="128.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dortmund Touristinfo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t3y-GG-IMa">
+                                                        <rect key="frame" x="0.0" y="0.0" width="389" height="26.5"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kampstraße 80" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q0d-g5-zZK">
+                                                        <rect key="frame" x="0.0" y="31.5" width="389" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="44137 Dortmund" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XfC-mu-csq">
+                                                        <rect key="frame" x="0.0" y="57" width="389" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tel.: +49 231 189990" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DWw-Wz-Kjm">
+                                                        <rect key="frame" x="0.0" y="82.5" width="389" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-Mail: info(at)dortmund-tourismus.de " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7QP-xk-Tp0">
+                                                        <rect key="frame" x="0.0" y="108" width="389" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="v3X-tS-Or3" firstAttribute="top" secondItem="ckB-VP-F7o" secondAttribute="top" constant="8" id="31D-Wo-1oz"/>
+                                            <constraint firstItem="40K-nO-wqj" firstAttribute="leading" secondItem="ckB-VP-F7o" secondAttribute="leading" constant="10" id="3IU-gH-3Xs"/>
+                                            <constraint firstItem="lS0-pq-JcE" firstAttribute="leading" secondItem="ckB-VP-F7o" secondAttribute="leading" constant="10" id="Bz8-gI-2uT"/>
+                                            <constraint firstItem="fpU-oZ-fev" firstAttribute="leading" secondItem="ckB-VP-F7o" secondAttribute="leading" constant="20" id="Fgh-WD-x12"/>
+                                            <constraint firstItem="fpU-oZ-fev" firstAttribute="top" secondItem="lS0-pq-JcE" secondAttribute="bottom" constant="20" id="GhZ-BO-QVU"/>
+                                            <constraint firstAttribute="trailing" secondItem="fpU-oZ-fev" secondAttribute="trailing" constant="14" id="ZIE-sF-6qn"/>
+                                            <constraint firstAttribute="bottom" secondItem="40K-nO-wqj" secondAttribute="bottom" constant="10" id="bNb-b3-LQz"/>
+                                            <constraint firstAttribute="trailing" secondItem="v3X-tS-Or3" secondAttribute="trailing" id="gUX-KK-UBl"/>
+                                            <constraint firstItem="lS0-pq-JcE" firstAttribute="top" secondItem="v3X-tS-Or3" secondAttribute="bottom" constant="60" id="ihz-Md-sAe"/>
+                                            <constraint firstAttribute="trailing" secondItem="40K-nO-wqj" secondAttribute="trailing" constant="15" id="jdA-SC-khY"/>
+                                            <constraint firstItem="40K-nO-wqj" firstAttribute="top" secondItem="fpU-oZ-fev" secondAttribute="bottom" constant="60" id="sJc-3v-SMX"/>
+                                            <constraint firstAttribute="trailing" secondItem="lS0-pq-JcE" secondAttribute="trailing" constant="10" id="syR-6H-x9Z"/>
+                                            <constraint firstItem="v3X-tS-Or3" firstAttribute="centerX" secondItem="ckB-VP-F7o" secondAttribute="centerX" id="uLc-4l-Svd"/>
+                                            <constraint firstItem="v3X-tS-Or3" firstAttribute="leading" secondItem="ckB-VP-F7o" secondAttribute="leading" id="wx6-Xa-V9E"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ckB-VP-F7o" firstAttribute="top" secondItem="X8T-Tw-JYf" secondAttribute="top" id="C7M-mT-4Fm"/>
+                                    <constraint firstItem="ckB-VP-F7o" firstAttribute="bottom" secondItem="X8T-Tw-JYf" secondAttribute="bottom" id="LjX-pT-f3b"/>
+                                    <constraint firstItem="ckB-VP-F7o" firstAttribute="leading" secondItem="X8T-Tw-JYf" secondAttribute="leading" id="Mtu-R4-r5M"/>
+                                    <constraint firstItem="ckB-VP-F7o" firstAttribute="trailing" secondItem="X8T-Tw-JYf" secondAttribute="trailing" id="uHK-Dd-MEo"/>
+                                    <constraint firstItem="ckB-VP-F7o" firstAttribute="width" secondItem="MaG-bg-Gd6" secondAttribute="width" id="xgT-5p-8Y4"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="X8T-Tw-JYf"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="MaG-bg-Gd6"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Vki-ct-eTh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RYM-AK-lF1" firstAttribute="leading" secondItem="Vki-ct-eTh" secondAttribute="leading" id="5A8-M2-EhZ"/>
+                            <constraint firstItem="RYM-AK-lF1" firstAttribute="trailing" secondItem="Vki-ct-eTh" secondAttribute="trailing" id="7dL-Gl-G8l"/>
+                            <constraint firstItem="RYM-AK-lF1" firstAttribute="bottom" secondItem="Vki-ct-eTh" secondAttribute="bottom" id="M8L-0r-ibv"/>
+                            <constraint firstItem="RYM-AK-lF1" firstAttribute="top" secondItem="Vki-ct-eTh" secondAttribute="top" id="xEH-8Y-AT8"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="31z-It-mYp"/>
+                    <navigationItem key="navigationItem" id="2o4-Sp-T3a"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IaG-dL-xmp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="395.6521739130435" y="931.47321428571422"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="rie-2h-RiH">
+            <objects>
+                <viewController id="seh-hW-sWS" customClass="TableViewController" customModule="Project_01___Dortmund" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gH7-5W-7Gc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="140" estimatedRowHeight="140" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Pbf-k5-3CH">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" id="9tT-iQ-RiP" customClass="MainTableViewCell" customModule="Project_01___Dortmund" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="140"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9tT-iQ-RiP" id="gkB-Ya-JfA">
+                                            <rect key="frame" x="0.0" y="0.0" width="383" height="140"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KGY-aT-izo">
+                                                    <rect key="frame" x="10" y="10" width="120" height="120"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="120" id="9pG-op-Et4"/>
+                                                        <constraint firstAttribute="height" constant="120" id="ikW-oi-Wr6"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MQI-nB-Zoz">
+                                                    <rect key="frame" x="150" y="10" width="223" height="120"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="MQI-nB-Zoz" firstAttribute="bottom" secondItem="KGY-aT-izo" secondAttribute="bottom" id="7fC-dq-ev4"/>
+                                                <constraint firstAttribute="trailing" secondItem="MQI-nB-Zoz" secondAttribute="trailing" constant="10" id="8A2-lc-YgY"/>
+                                                <constraint firstItem="MQI-nB-Zoz" firstAttribute="leading" secondItem="KGY-aT-izo" secondAttribute="trailing" constant="20" id="e3o-sh-esJ"/>
+                                                <constraint firstItem="KGY-aT-izo" firstAttribute="leading" secondItem="gkB-Ya-JfA" secondAttribute="leading" constant="10" id="j1L-pe-RpK"/>
+                                                <constraint firstItem="KGY-aT-izo" firstAttribute="centerY" secondItem="gkB-Ya-JfA" secondAttribute="centerY" id="oPr-J2-Za9"/>
+                                                <constraint firstItem="MQI-nB-Zoz" firstAttribute="top" secondItem="KGY-aT-izo" secondAttribute="top" id="ptN-B8-H7O"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="cellImageView" destination="KGY-aT-izo" id="Fki-Gd-RA6"/>
+                                            <outlet property="cellLabel" destination="MQI-nB-Zoz" id="efu-Nv-bcp"/>
+                                            <outlet property="cityView" destination="gkB-Ya-JfA" id="pdZ-35-zqs"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="seh-hW-sWS" id="sUa-OW-k3K"/>
+                                    <outlet property="delegate" destination="seh-hW-sWS" id="Cjs-yV-dFD"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bus-WG-7ts"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Pbf-k5-3CH" firstAttribute="top" secondItem="bus-WG-7ts" secondAttribute="top" id="4KB-wg-zZE"/>
+                            <constraint firstItem="Pbf-k5-3CH" firstAttribute="bottom" secondItem="bus-WG-7ts" secondAttribute="bottom" id="EbS-ta-kC6"/>
+                            <constraint firstItem="Pbf-k5-3CH" firstAttribute="trailing" secondItem="bus-WG-7ts" secondAttribute="trailing" id="mQZ-ci-meY"/>
+                            <constraint firstItem="Pbf-k5-3CH" firstAttribute="leading" secondItem="bus-WG-7ts" secondAttribute="leading" id="wmu-lk-aVC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="jud-1z-dkZ"/>
+                    <connections>
+                        <outlet property="mainTableView" destination="Pbf-k5-3CH" id="mAD-jg-iya"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xCH-rP-GCK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1305.7971014492755" y="168.75"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="nfm-so-zOe">
+            <objects>
+                <tabBarController id="x8I-oz-ipI" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Qkt-rG-8kU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="IZ0-cL-fcc" kind="relationship" relationship="viewControllers" id="7dx-J6-ZLP"/>
+                        <segue destination="7XZ-L4-Wfy" kind="relationship" relationship="viewControllers" id="jZf-HY-sdb"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z1e-dZ-PLZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-758" y="521"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="2qj-VE-lm4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IZ0-cL-fcc" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item 1" id="1oo-r4-T9f"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Cma-rZ-H0o">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="seh-hW-sWS" kind="relationship" relationship="rootViewController" id="eJH-GC-zhS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CtC-SC-9bW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="396" y="169"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dortmund" width="322" height="157"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
