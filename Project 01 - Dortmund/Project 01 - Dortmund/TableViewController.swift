@@ -15,12 +15,20 @@ class TableViewController: UIViewController {
         super.viewDidLoad()
 
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let cell = sender as? UITableViewCell, let indexPath = mainTableView.indexPath(for: cell) {
+            if let vc = segue.destination as? DetailViewController {
+                vc.data = Data.list[indexPath.row]
+            }
+        }
+    }
 
 }
 
 extension TableViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return Data.list.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

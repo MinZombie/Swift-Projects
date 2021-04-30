@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D22509DB263C3C0B00510AE1 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22509DA263C3C0B00510AE1 /* DetailViewController.swift */; };
 		D22C5CE5263A0D8500CBE24D /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22C5CE4263A0D8500CBE24D /* ContactViewController.swift */; };
 		D24D198F263377AB00083AAD /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24D198E263377AB00083AAD /* Data.swift */; };
 		D25E555B26321A8700D27538 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25E555A26321A8700D27538 /* AppDelegate.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D22509DA263C3C0B00510AE1 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		D22C5CE4263A0D8500CBE24D /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		D24D198E263377AB00083AAD /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		D25E555726321A8700D27538 /* Project 01 - Dortmund.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 01 - Dortmund.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +69,7 @@
 				D25E556F2632224E00D27538 /* TableViewController.swift */,
 				D2AF12C526348F9900634D23 /* MainTableViewCell.swift */,
 				D22C5CE4263A0D8500CBE24D /* ContactViewController.swift */,
+				D22509DA263C3C0B00510AE1 /* DetailViewController.swift */,
 				D24D198E263377AB00083AAD /* Data.swift */,
 				D25E556026321A8700D27538 /* Main.storyboard */,
 				D25E556326321A8800D27538 /* Assets.xcassets */,
@@ -152,6 +155,7 @@
 				D2AF12C626348F9900634D23 /* MainTableViewCell.swift in Sources */,
 				D25E55702632224F00D27538 /* TableViewController.swift in Sources */,
 				D22C5CE5263A0D8500CBE24D /* ContactViewController.swift in Sources */,
+				D22509DB263C3C0B00510AE1 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

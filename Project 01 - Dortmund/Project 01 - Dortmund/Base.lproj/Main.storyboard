@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="x8I-oz-ipI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="x8I-oz-ipI">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--über Dortmund-->
         <scene sceneID="Sv5-bN-Bff">
             <objects>
                 <viewController id="7XZ-L4-Wfy" customClass="ContactViewController" customModule="Project_01___Dortmund" customModuleProvider="target" sceneMemberID="viewController">
@@ -33,7 +34,7 @@
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fpU-oZ-fev">
                                                 <rect key="frame" x="20" y="274" width="380" height="317.5"/>
-                                                <mutableString key="text">Wer das Ruhrgebiet mit all seinen Facetten erkunden möchte, kommt an Dortmund definitiv nicht vorbei. Die Heimatstadt des BVB überrascht nicht nur mit einer gehörigen Portion Fußballliebe, sondern auch mit einer Bandbreite an Möglichkeiten. Hier könnt Ihr auf den Spuren einer ehemaligen Zeche wandeln, in einer Ausstellung alle Facetten der Arbeitswelt erkunden und Euch die Geheimnisse des Bierbrauens näher bringen lassen. Egal ob Shopping-Victim, Naturliebhaber oder Fußballfan: In Dortmund kommt ganz sicher jeder auf seine Kosten.</mutableString>
+                                                <string key="text">Wer das Ruhrgebiet mit all seinen Facetten erkunden möchte, kommt an Dortmund definitiv nicht vorbei. Die Heimatstadt des BVB überrascht nicht nur mit einer gehörigen Portion Fußballliebe, sondern auch mit einer Bandbreite an Möglichkeiten. Hier könnt Ihr auf den Spuren einer ehemaligen Zeche wandeln, in einer Ausstellung alle Facetten der Arbeitswelt erkunden und Euch die Geheimnisse des Bierbrauens näher bringen lassen. Egal ob Shopping-Victim, Naturliebhaber oder Fußballfan: In Dortmund kommt ganz sicher jeder auf seine Kosten.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -113,7 +114,7 @@
                             <constraint firstItem="RYM-AK-lF1" firstAttribute="top" secondItem="Vki-ct-eTh" secondAttribute="top" id="xEH-8Y-AT8"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="31z-It-mYp"/>
+                    <tabBarItem key="tabBarItem" title="über Dortmund" id="31z-It-mYp"/>
                     <navigationItem key="navigationItem" id="2o4-Sp-T3a"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IaG-dL-xmp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -133,10 +134,10 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" id="9tT-iQ-RiP" customClass="MainTableViewCell" customModule="Project_01___Dortmund" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="140"/>
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="140"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9tT-iQ-RiP" id="gkB-Ya-JfA">
-                                            <rect key="frame" x="0.0" y="0.0" width="383" height="140"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="384.5" height="140"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KGY-aT-izo">
@@ -147,7 +148,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MQI-nB-Zoz">
-                                                    <rect key="frame" x="150" y="10" width="223" height="120"/>
+                                                    <rect key="frame" x="150" y="10" width="224.5" height="120"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -166,6 +167,7 @@
                                             <outlet property="cellImageView" destination="KGY-aT-izo" id="Fki-Gd-RA6"/>
                                             <outlet property="cellLabel" destination="MQI-nB-Zoz" id="efu-Nv-bcp"/>
                                             <outlet property="cityView" destination="gkB-Ya-JfA" id="pdZ-35-zqs"/>
+                                            <segue destination="bxo-BE-pLd" kind="show" id="mdp-AM-dEE"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -193,6 +195,65 @@
             </objects>
             <point key="canvasLocation" x="1305.7971014492755" y="168.75"/>
         </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="9lH-Yf-Yti">
+            <objects>
+                <viewController id="bxo-BE-pLd" customClass="DetailViewController" customModule="Project_01___Dortmund" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cRb-4O-KaU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XTt-nL-MDR">
+                                <rect key="frame" x="30" y="266" width="50" height="32"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QtG-kq-OQR">
+                                <rect key="frame" x="0.0" y="328" width="414" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="ttK-F8-1JN"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tDV-jn-jdX">
+                                <rect key="frame" x="362" y="266" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="UTi-fF-qF9"/>
+                                    <constraint firstAttribute="height" constant="32" id="xqp-dE-1BV"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="Button">
+                                    <imageReference key="image" image="heart" catalog="system" symbolScale="large"/>
+                                </state>
+                                <state key="selected" image="heart.fill" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Wnm-9j-sq3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tDV-jn-jdX" firstAttribute="bottom" secondItem="XTt-nL-MDR" secondAttribute="bottom" id="1mw-se-M4S"/>
+                            <constraint firstItem="QtG-kq-OQR" firstAttribute="leading" secondItem="Wnm-9j-sq3" secondAttribute="leading" id="4eL-5d-XJF"/>
+                            <constraint firstItem="QtG-kq-OQR" firstAttribute="centerY" secondItem="cRb-4O-KaU" secondAttribute="centerY" id="BBp-F9-CyE"/>
+                            <constraint firstItem="tDV-jn-jdX" firstAttribute="top" secondItem="XTt-nL-MDR" secondAttribute="top" id="FE4-Ol-T2q"/>
+                            <constraint firstItem="QtG-kq-OQR" firstAttribute="trailing" secondItem="Wnm-9j-sq3" secondAttribute="trailing" id="GYc-TX-nq7"/>
+                            <constraint firstItem="QtG-kq-OQR" firstAttribute="centerX" secondItem="cRb-4O-KaU" secondAttribute="centerX" id="IFL-sY-hfb"/>
+                            <constraint firstItem="QtG-kq-OQR" firstAttribute="top" secondItem="XTt-nL-MDR" secondAttribute="bottom" constant="30" id="dmy-nu-wnr"/>
+                            <constraint firstItem="Wnm-9j-sq3" firstAttribute="trailing" secondItem="tDV-jn-jdX" secondAttribute="trailing" constant="20" id="egg-LK-FiE"/>
+                            <constraint firstItem="XTt-nL-MDR" firstAttribute="leading" secondItem="Wnm-9j-sq3" secondAttribute="leading" constant="30" id="quL-i1-nLE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="UAp-rt-uAt"/>
+                    <connections>
+                        <outlet property="detailImage" destination="QtG-kq-OQR" id="B8x-x0-vlc"/>
+                        <outlet property="detailLabel" destination="XTt-nL-MDR" id="ucN-Hm-tvj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fqp-GF-FXx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2071.0144927536235" y="183.48214285714286"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="nfm-so-zOe">
             <objects>
@@ -211,11 +272,11 @@
             </objects>
             <point key="canvasLocation" x="-758" y="521"/>
         </scene>
-        <!--Item 1-->
+        <!--Sehenswürdigkeiten-->
         <scene sceneID="2qj-VE-lm4">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IZ0-cL-fcc" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 1" id="1oo-r4-T9f"/>
+                    <tabBarItem key="tabBarItem" title="Sehenswürdigkeiten" id="1oo-r4-T9f"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Cma-rZ-H0o">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -233,8 +294,13 @@
     </scenes>
     <resources>
         <image name="dortmund" width="322" height="157"/>
+        <image name="heart" catalog="system" width="128" height="109"/>
+        <image name="heart.fill" catalog="system" width="128" height="109"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
