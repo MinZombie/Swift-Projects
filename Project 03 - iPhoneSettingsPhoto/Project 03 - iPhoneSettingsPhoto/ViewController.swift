@@ -18,7 +18,22 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    func showActionSheet() {
+        let controller = UIAlertController(title: nil, message: "Resetting will allow previously blocked people, places, dates, or holidays to once again be included in new Memories.", preferredStyle: .actionSheet)
+        
+        let resetAction = UIAlertAction(title: "Reset", style: .destructive) { (action) in
+            print("Reset action")
+        }
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { (action) in
+            print("Cancel action")
+        }
+        
+        controller.addAction(resetAction)
+        controller.addAction(cancelAction)
+        
+        present(controller, animated: true, completion: nil)
+    }
+    
 }
 
 extension ViewController: UITableViewDataSource {
@@ -61,5 +76,14 @@ extension ViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
         return list[section].footer
+    }
+}
+
+extension ViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.section == 3 && indexPath.row == 0 {
+            showActionSheet()
+            tableView.deselectRow(at: indexPath, animated: true)
+        }
     }
 }
