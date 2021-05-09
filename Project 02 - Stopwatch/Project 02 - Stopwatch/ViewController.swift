@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var startStopButton: UIButton!
     @IBOutlet weak var lapResetButton: UIButton!
     
-    @IBOutlet weak var tablewView: UITableView!
+    @IBOutlet weak var tableView: UITableView!
     
     var timer = Timer()
     var subTimer = Timer()
@@ -44,6 +44,9 @@ class ViewController: UIViewController {
             timer = Timer.scheduledTimer(timeInterval: 0.035, target: self, selector: #selector(mainTimerFire), userInfo: nil, repeats: true)
             subTimer = Timer.scheduledTimer(timeInterval: 0.035, target: self, selector: #selector(subTimerFire), userInfo: nil, repeats: true)
             
+            print(timer)
+            print(subTimer)
+            
             
         } else {
             
@@ -67,7 +70,8 @@ class ViewController: UIViewController {
             
             record.insert(subTime.text ?? "", at: 0)
             // 리로드 말고 다른 방법은 없는가?
-            tablewView.reloadData()
+            tableView.reloadData()
+            
             
         } else {
             count = 0
@@ -84,6 +88,12 @@ class ViewController: UIViewController {
         let timeString = timerToString(minutes: time.0, seconds: time.1, ms: time.2)
         
         mainTime.text = timeString
+        
+        // runloop common 모드로 ui와 상호 작용할 때 멈추던거 해결
+        // timer.scheduledTimer를 사용하면 메인스레드 runloop에 자동으로 타이머가 defaultRunLoopMode로 추가 되는데 이는 ui와 상호작용 시 타이머가 멈춤.
+        RunLoop.current.add(timer, forMode: .common)
+
+        //print(timer)
     }
     
     @objc func subTimerFire() {
@@ -93,6 +103,9 @@ class ViewController: UIViewController {
         let timeString = timerToString(minutes: time.0, seconds: time.1, ms: time.2)
         
         subTime.text = timeString
+        RunLoop.current.add(subTimer, forMode: .common)
+        
+        //print(subTimer)
     }
     
     func countConvert(_ count: Double) -> (Int, Int, Int) {

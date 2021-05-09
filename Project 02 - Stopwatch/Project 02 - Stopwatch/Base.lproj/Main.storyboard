@@ -100,7 +100,7 @@
                         <outlet property="mainTime" destination="knx-6k-8tB" id="k4J-Ex-HcJ"/>
                         <outlet property="startStopButton" destination="Yog-n5-Sq9" id="YYD-lw-Pcj"/>
                         <outlet property="subTime" destination="lIi-jO-dar" id="Oaw-4V-LBD"/>
-                        <outlet property="tablewView" destination="nBt-Ws-fZD" id="GXD-oe-Ov4"/>
+                        <outlet property="tableView" destination="nBt-Ws-fZD" id="FoU-9E-XCN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
