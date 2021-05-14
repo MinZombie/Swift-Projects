@@ -8,8 +8,6 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
-    var data: Model?
 
     @IBOutlet weak var todoTableView: UITableView!
     
@@ -17,18 +15,19 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         todoTableView.dataSource = self
+
     }
     
-    // modal 방식인 뷰를 닫아도 viewWillAppear가 호출되지 않아 데이터가 리로드 되지 않고 있음
-    // 해결방법은 notification 활용
-    // notification 공부하고 다시 시작
-//    override func viewWillAppear(_ animated: Bool) {
-//        super.viewWillAppear(animated)
-//
-//        todoTableView.reloadData()
-//    }
-
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? AddViewController {
+            
+            vc.callback = { result in
+                
+                Model.dummy.append(result)
+                self.todoTableView.reloadData()
+            }
+        }
+    }
 }
 
 extension ViewController: UITableViewDataSource {

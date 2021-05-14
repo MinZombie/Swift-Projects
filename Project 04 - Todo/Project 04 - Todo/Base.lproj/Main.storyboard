@@ -29,17 +29,17 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MAz-hh-2On">
-                                                    <rect key="frame" x="20" y="6" width="25" height="14.5"/>
+                                                    <rect key="frame" x="20" y="5" width="33" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Pus-Om-nkD">
-                                                    <rect key="frame" x="20" y="22.5" width="40.5" height="13.5"/>
+                                                    <rect key="frame" x="20" y="25.5" width="40.5" height="13.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" systemColor="systemGrayColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -60,7 +60,7 @@
                     <navigationItem key="navigationItem" id="bws-Me-xpG">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="PcJ-Ej-lOy">
                             <connections>
-                                <segue destination="sBe-IE-Fdf" kind="presentation" modalPresentationStyle="fullScreen" id="oSP-OS-VZD"/>
+                                <segue destination="SHI-zd-Mhm" kind="presentation" id="zSg-01-njH"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -77,11 +77,28 @@
             <objects>
                 <viewController id="SHI-zd-Mhm" customClass="AddViewController" customModule="Project_04___Todo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zxh-ta-i2m">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="giC-Is-EvF">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                                <items>
+                                    <navigationItem title="Title" id="2oI-ot-dYF">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="aRW-6i-pPu">
+                                            <connections>
+                                                <action selector="cancelButton:" destination="SHI-zd-Mhm" id="ZTz-Iw-bAq"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="ToC-P4-Dzl">
+                                            <connections>
+                                                <action selector="saveButton" destination="SHI-zd-Mhm" id="w2y-89-QCl"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="J1Y-Xq-6Rt">
-                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <rect key="frame" x="0.0" y="56" width="414" height="786"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor"/>
@@ -92,10 +109,13 @@
                         <viewLayoutGuide key="safeArea" id="jaC-AH-mw1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="J1Y-Xq-6Rt" firstAttribute="top" secondItem="jaC-AH-mw1" secondAttribute="top" id="FPp-FL-gii"/>
+                            <constraint firstItem="J1Y-Xq-6Rt" firstAttribute="top" secondItem="giC-Is-EvF" secondAttribute="bottom" id="01N-wB-w7r"/>
+                            <constraint firstItem="giC-Is-EvF" firstAttribute="top" secondItem="jaC-AH-mw1" secondAttribute="top" id="BwN-6z-hou"/>
+                            <constraint firstItem="giC-Is-EvF" firstAttribute="leading" secondItem="jaC-AH-mw1" secondAttribute="leading" id="KnZ-tm-shO"/>
+                            <constraint firstAttribute="bottom" secondItem="J1Y-Xq-6Rt" secondAttribute="bottom" id="XQC-hb-iWc"/>
                             <constraint firstItem="J1Y-Xq-6Rt" firstAttribute="trailing" secondItem="jaC-AH-mw1" secondAttribute="trailing" id="bxP-9c-QXb"/>
                             <constraint firstItem="J1Y-Xq-6Rt" firstAttribute="leading" secondItem="jaC-AH-mw1" secondAttribute="leading" id="meU-ED-cbP"/>
-                            <constraint firstAttribute="bottom" secondItem="J1Y-Xq-6Rt" secondAttribute="bottom" id="tnC-N9-jca"/>
+                            <constraint firstItem="giC-Is-EvF" firstAttribute="trailing" secondItem="jaC-AH-mw1" secondAttribute="trailing" id="miq-zp-9Ev"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="New" id="NV0-Av-woY">
@@ -116,7 +136,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MPq-Ws-P91" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2718.840579710145" y="117.85714285714285"/>
+            <point key="canvasLocation" x="2031.8840579710147" y="114.50892857142857"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5G6-JU-KUw">
@@ -136,24 +156,6 @@
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="114.50892857142857"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="tA1-Em-BfP">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sBe-IE-Fdf" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NfG-vJ-vvs">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="SHI-zd-Mhm" kind="relationship" relationship="rootViewController" id="GYF-Lx-0Jb"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PeP-NM-dY7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1857" y="-391"/>
-        </scene>
     </scenes>
     <resources>
         <systemColor name="labelColor">
@@ -161,6 +163,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

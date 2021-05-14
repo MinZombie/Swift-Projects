@@ -62,8 +62,8 @@
 			children = (
 				D21A4C092649E55D00AC8B6A /* AppDelegate.swift */,
 				D21A4C0B2649E55D00AC8B6A /* SceneDelegate.swift */,
-				D21A4C0D2649E55D00AC8B6A /* ViewController.swift */,
 				D279D804264B12B10057F052 /* Model.swift */,
+				D21A4C0D2649E55D00AC8B6A /* ViewController.swift */,
 				D279D802264B0FF80057F052 /* AddViewController.swift */,
 				D21A4C0F2649E55D00AC8B6A /* Main.storyboard */,
 				D21A4C122649E55E00AC8B6A /* Assets.xcassets */,

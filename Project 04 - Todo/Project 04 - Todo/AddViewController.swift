@@ -8,18 +8,21 @@
 import UIKit
 
 class AddViewController: UIViewController {
+    
+    var callback: ((Model) -> Void)?
 
     @IBOutlet weak var textField: UITextView!
     
-    @IBAction func saveButton(_ sender: Any) {
-        guard let text = textField.text else {return}
-
-        Model.dummy.append(Model(task: text))
+    @IBAction func saveButton() {
+        guard let text = textField.text, !text.isEmpty else {
+            return
+        }
         
+        callback?(Model(task: text))
         dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func cancelButton(_ sender: Any) {
+    @IBAction func cancelButton() {
         dismiss(animated: true, completion: nil)
     }
     
@@ -28,4 +31,8 @@ class AddViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+}
+
+extension Notification.Name {
+    static let value = Notification.Name("valueNotification")
 }
