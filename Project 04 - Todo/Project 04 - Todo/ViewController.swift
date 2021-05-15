@@ -11,6 +11,13 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var todoTableView: UITableView!
     
+    let dateFormatter: DateFormatter = {
+       var date = DateFormatter()
+        date.dateStyle = .medium
+        date.timeStyle = .short
+        return date
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -19,12 +26,14 @@ class ViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+
         if let vc = segue.destination as? AddViewController {
-            
+
             vc.callback = { result in
                 
                 Model.dummy.append(result)
                 self.todoTableView.reloadData()
+               
             }
         }
     }
@@ -39,7 +48,7 @@ extension ViewController: UITableViewDataSource {
         let cell = todoTableView.dequeueReusableCell(withIdentifier: "todoCell", for: indexPath)
         
         cell.textLabel?.text = Model.dummy[indexPath.row].task
-        cell.detailTextLabel?.text = Model.dummy[indexPath.row].date.description
+        cell.detailTextLabel?.text = dateFormatter.string(from: Model.dummy[indexPath.row].date)
         
         return cell
     }
