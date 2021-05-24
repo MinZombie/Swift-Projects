@@ -8,16 +8,10 @@
 import UIKit
 
 class AuteurTableViewCell: UITableViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
+    
+    @IBOutlet weak var auteurImageView: UIImageView!
+    @IBOutlet weak var nameText: UILabel!
+    @IBOutlet weak var bioText: UILabel!
+    @IBOutlet weak var sourceText: UILabel!
+    
 }

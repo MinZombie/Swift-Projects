@@ -6,3 +6,15 @@
 //
 
 import Foundation
+
+struct Auteurs: Codable {
+    var auteurs: [Auteur]
+}
+
+struct Auteur: Codable {
+    var name: String
+    var bio: String
+    var image: String
+    var source: String
+    var films: [Film]
+}
