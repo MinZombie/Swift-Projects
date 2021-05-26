@@ -7,10 +7,6 @@
 
 import Foundation
 
-struct Films: Codable {
-    var films: [Film]
-}
-
 struct Film: Codable {
     var title: String
     var year: String

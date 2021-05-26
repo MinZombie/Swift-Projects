@@ -26,6 +26,7 @@ class ViewController: UIViewController {
             print("Error : \(error)")
         }
     }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +37,12 @@ class ViewController: UIViewController {
         parseJSON()
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? DetailViewController, let indexPath = tableView.indexPathForSelectedRow {
+
+            vc.films = result?.auteurs[indexPath.row].films
+        }
+    }
 
 }
 

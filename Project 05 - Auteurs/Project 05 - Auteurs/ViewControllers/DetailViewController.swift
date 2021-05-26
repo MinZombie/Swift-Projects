@@ -8,22 +8,34 @@
 import UIKit
 
 class DetailViewController: UIViewController {
-
+    @IBOutlet weak var tableView: UITableView!
+    
+    var films: [Film]!
+    let readMoreText: String = "Read more"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        tableView.dataSource = self
+
+    }
+}
+
+extension DetailViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return films.count
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "filmCell", for: indexPath) as! FilmTableViewCell
+        var film = films[indexPath.row]
+        
+        cell.titleLabel.text = film.title
+        cell.yearLabel.text = film.year
+        cell.posterImageView.image = UIImage(named: film.poster)
+        cell.plotLabel.text = film.plot
+        
+        return cell
     }
-    */
-
 }
+
